@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>TestPage</title>
+	<link rel="stylesheet" href="styles/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+</head>
+<body>
+	<div class="header">
+		<div class="nav">
+			<ul>
+				<li>MyTour</li>
+				<li><a href="#">Моя лента</a></li>
+				<li><a href="#">Интересы</a></li>
+				<li><a href="#">Направления</a></li>
+				<li><a href="#">Подбор тура</a></li>
+				<li><a href="#">Заявка</a></li>
+			</ul>
+		</div>
+	</div>
+	<div class="wrap-interests">
+		<div class="interests">
+			<h2>Настройки интересов</h2>
+			<div class="list">
+				<ul class="tabs">
+					<li>
+						<input type="radio" name="tabs" id="tab-1" >
+						<label for="tab-1">ПОДБОРКА ВАСИ</label>
+						<div class="tab-content">
+							ПОДБОРКА ВАСИ
+						</div>
+					</li>
+					<li>
+						<input type="radio" name="tabs" id="tab-2" checked>
+						<label for="tab-2">ПОДБОРКА 123</label>
+						<div class="tab-content"><!-- Подборка 123 -->
+							<div class="header-compilation">
+								<div class="name">
+									<p class="text">Название подборки</p>
+									<div class="compilationName">
+										<p>ПОДБОРКА 123</p>
+									</div>
+								</div>
+								<div class="sity">
+									<p class="text">Ваш город</p>
+									<div class="sityName">
+										<input id="textin" type="text" value="Санкт-Петербург">
+										<span onclick="CLEAN()" class="cls"></span>
+									</div>
+								</div>
+								<div class="seeResults">
+									<p>СМОТРЕТЬ РЕЗУЛЬТАТЫ</p></div>
+								</div>
+								<div class="location">
+									<p class="text">Вы можете задать несколько стран или регионов для одной подборки</p>
+									<div class="select-countries">
+										<div class="regions">
+											<p>Юго-Восточная Азия</p>
+										</div>
+										<div class="countries">
+											<div class="Thailand">Тайланд<span class="close"></span></div>
+											<div class="Vietnam">Вьетнам<span class="close"></span></div>
+											<div class="Indonesia">Индонезия<span class="close"></span></div>
+										</div>
+									</div>
+									<div class="wrapAddBtn">
+										<div class="addButtons" id="addRegin">ДОБАВИТЬ РЕГИОН</div>
+										<div class="addButtons" id="addCountry">ДОБАВИТЬ СТРАНЫ</div>
+									</div>
+								</div>
+								<div class="filters">
+									<div class="date">
+										<p class="text">Дата вылета</p>
+										<div class="selectDate">
+											13 января
+										</div>
+									</div>
+									<div class="amountOfDays">
+										<p class="text">На сколько</p>
+										<div><select name="sel1" class="selectDays">
+											<option value="#">2-5 ночей</option>
+											<option value="#">5-10 ночей</option>
+											<option value="#">7-14 ночей</option>
+										</select></div>
+									</div>
+									<div class="amountOfGuests">
+										<p class="text">Количество гстей</p>
+										<div ><select name="sel5" class="selectGuests">
+											<option value="#">2 взрослых, 2 детей</option>
+											<option value="#">2 взрослых, 1 ребенок</option>
+											<option value="#">1 взрослый, 1 ребенок</option>
+										</select></div>
+									</div>
+									<div class="tourCost">
+										<p  class="text">Стоимость тура</p>
+										<div><select name="sel2" class="selectCost">
+											<option value="#">30 000 - 60 000Р</option>
+											<option value="#">60 000 - 100 000Р</option>
+											<option value="#">50 000 - 150 000Р</option>
+										</select></div>
+									</div>
+								</div>
+								<div class="filters2">
+									<div class="category">
+										<p class="text">Категория отелей от</p>
+										<div class="selectCategory">
+											...
+										</div>
+									</div>
+									<div class="rating">
+										<p class="text">Рейтинг TopHotels</p>
+										<div><select name="sel6" class="selectRating">
+											<option value="#">Не ниже 4.00</option>
+											<option value="#">Не ниже 3.00</option>
+										</select></div>
+									</div>
+									<div class="typeOfFood">
+										<p class="text">Тип питания</p>
+										<div "><select name="sel3" class="selectTypeFood">
+											<option value="#">Любой</option>
+											<option value="#">2-х разовый</option>
+											<option value="#">3-х разовый</option>
+										</select></div>
+									</div>
+									<div class="position">
+										<p  class="text">Расположение</p>
+										<div ><select name="sel4" class="selectPosition">
+											<option value="#">Пляжные, 1-я линия</option>
+											<option value="#">Пляжные, 2-я линия</option>
+										</select></div>
+									</div>
+									<div class="deleteCompilation"><img src="img/delete.png" alt=deletebtn""><p>УДАЛИТЬ ПОДБОРКУ</p></div>
+								</div> 
+								<!--конец Подборки 123 -->
+							</div>
+						</li>
+						<li>
+							<input type="radio" name="tabs" id="tab-3">
+							<label for="tab-3">ТУРЦИЯ 23.03</label>
+							<div class="tab-content">ТУРЦИЯ 23.03
+							</div>
+						</li>
+						<li>
+							<input type="radio" name="tabs" id="tab-4">
+							<label for="tab-4">ПОДБОРКА #1</label>
+							<div class="tab-content">ПОДБОРКА #1
+							</div>
+						</li>
+					</ul>
+					<div class="addCompilation">
+						<img src="img/plus.png" alt="plus">
+						<p>ДОБАВИТЬ ПОДБОРКУ</p></div>
+					</div>
+				</div>
+			</div>
+			<div class="footer">
+				<div class="project">
+					<h3>Туристический проект</h6>
+						<p>Москва, 1-й Шипковский переулок, д.1</p>
+						<a href="#">Показать на карте</a>
+					</div>
+					<div class="working-hours">
+						<p>Время работы офиса:</p>
+						<p>Будни 10:00 - 21:00</p>
+						<p>Выходные и праздники 11:00 - 17:00</p>
+					</div>
+					<div class="feedback">
+						<p>+7 495 585 55 55</p>
+						<a href="#">Обратная связь</a>
+					</div>
+					<div class="social-networks">
+						<a href="#">ВКонтакте</a>
+						<a href="#">Facebook</a>
+						<a href="#">Instagram</a>
+						<a href="#">Одноклассники</a>
+					</div>
+				</div>
+
+				<script src="scripts/jquery-3.3.1.min.js"></script>
+				<script src="scripts/script.js"></script>
+
+			</body>
+			</html>

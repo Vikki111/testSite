@@ -1,0 +1,501 @@
+	
+	html {
+		font-family: 'Open Sans', sans-serif;
+		font-size: 14px;	
+	}
+	body {
+		margin: 0;
+		padding: 0;
+		background: #f2f2f2;
+	}
+	.text {
+		font-family: 'Open Sans', sans-serif;
+		color: #bdbdbd;
+		font-size: 13px;
+	}
+	.header {
+		display: flex;
+		justify-content: center;
+		background-color: #0087d2;
+	}
+	.nav {
+		width: 70%
+	}
+	.nav ul{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		flex-wrap: wrap;
+	}
+	.nav li{
+		list-style-type: none;
+		color: white;
+	}
+	.nav a {
+		text-decoration: none;
+		color: white;
+	}
+	.nav a:hover {
+		font-weight: 600;
+	}
+	.wrap-interests{
+		display: flex;
+		justify-content: center;
+	}
+	.interests {
+		width: 960px;
+	}
+	.list{
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: flex-start;
+		background: white;
+	}
+
+	/*tabs*/
+	.tabs {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		position: relative;
+	}
+	.tabs:after {
+		content: "";
+		clear: both;
+		display: block;
+		height: 550px;
+	}
+	.tabs li {
+	}
+	.tabs li > input {
+		display: none;
+		margin: 0;
+	}
+	.tabs li > label {
+		display: inline-block;
+		border-right-width: 0;
+		border-bottom-width: 0;
+		height: 30px;
+		line-height: 30px;
+		padding: 5px 20px;
+		cursor: pointer;
+		-webkit-user-select: none;
+		-moz-user-select: none;
+		-ms-user-select: none;
+		user-select: none;
+		margin-left: 10px;
+	}
+	.tabs li:last-child > label {
+		border-right-width: 1px;
+	}
+	.tabs .tab-content {
+		display: none;
+		position: absolute;
+		left: 30px;
+		border-top: 2px solid #f2f2f2;
+		height: auto;
+		width: 900px;
+		overflow-y: auto;
+	}
+
+	/* Функциональность: */
+
+	.tabs li > input:checked + label {
+		color: #2d9cdb;
+		border-bottom: 3px solid #2d9cdb;
+	}
+	.tabs li > input:checked ~ .tab-content {
+		display: block;
+	}
+	/*end tabs*/
+
+
+	.interests ul {
+		padding: 0;
+		display: flex;
+		width: 70%;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.interests li {
+		list-style-type: none;
+	}
+
+	.header-compilation {
+		display: flex;
+		justify-content: space-between;
+		flex-wrap: wrap;
+	}
+	.compilationName{
+		border: 1px solid #e0e0e0;
+		padding: 5px;
+	}
+	.compilationName p{
+		margin: 6px;
+	}
+	.sityName{
+		border: 1px solid #e0e0e0;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 5px;
+	}
+	.sityName p, span{
+		margin: 6px;
+	}
+#textin {
+	height: 20px;
+	border: none;
+}
+
+
+	/* крестик*/
+	.close {
+		display: flex;
+		opacity: 0.3;
+	}
+	.close:hover {
+		opacity: 1;
+	}
+	.close:before, .close:after {
+		display: flex;
+		content: ' ';
+		height: 16px;
+		width: 2px;
+		background-color: #333;
+	}
+	.close:before {
+		transform: rotate(45deg);
+	}
+	.close:after {
+		transform: rotate(-45deg);
+	}
+	/* крестик*/
+
+	.cls {
+		display: flex;
+		opacity: 0.3;
+	}
+	.cls:hover {
+		opacity: 1;
+	}
+	.cls:before, .cls:after {
+		display: flex;
+		content: ' ';
+		height: 16px;
+		width: 2px;
+		background-color: #333;
+	}
+	.cls:before {
+		transform: rotate(45deg);
+	}
+	.cls:after {
+		transform: rotate(-45deg);
+	}
+
+	/***/
+	.seeResults{
+		display: flex;
+		align-self: flex-end;
+		height: 40px;
+		width: 230px;
+		background-color: #ff8e41;
+		border-radius: 3px;
+		color: white;
+		align-items: center;
+		padding-left: 5px;
+	}
+
+	.select-countries {
+		border: 1px solid #e0e0e0;
+	}
+	.regions p {
+		margin-left: 15px;
+	}
+	.countries {
+		display: flex;
+	}
+	.countries div{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-left: 15px;
+		margin-bottom: 10px;
+		padding: 3px;
+		padding-left: 10px;
+		padding-right:  10px;
+		border-radius: 15px;
+		background-color: #f2f2f2;
+		width: 100px;
+	}
+	.countries span {
+		margin: 6px;
+	}
+	.addButtons {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		margin-top: 20px;
+		margin-left: 10px;
+		border: 1px solid #2d9cdb;
+		background-color: white;
+		border-radius: 20px;
+		padding: 10px;
+		color: #2d9cdb;
+		width: 140px;
+	}
+	.addButtons:hover {
+		border: 1px solid #2d9cdb;
+		background-color: #2d9cdb;
+		color: white;
+	}
+	.wrapAddBtn {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+	}
+	.filters, .filters2 {
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		-webkit-flex-direction: row;
+		-moz-flex-direction: row;
+		-ms-flex-direction: row;
+		-o-flex-direction: row;
+		flex-direction: row;
+		
+	}
+	.filters p{
+		margin-left: 10px;
+	}
+	.date div, .amountOfDays div, .amountOfGuests div, .tourCost div{
+		border: 1px solid #e0e0e0;
+		border-right: none;
+		padding: 10px;
+	} 
+	.tourCost div {
+		border-right: 1px solid #e0e0e0;
+	}
+
+	.date {
+		width: 30%;
+	}
+	.amountOfDays {
+		width: 15%;
+	}
+	.amountOfGuests {
+		width: 25%;
+	}
+	.tourCost {
+		width: 30%;
+	}
+
+	.filters2 p{
+		margin-left: 10px;
+	}
+	.category div, .rating div, .typeOfFood div, .position div{
+		border: 1px solid #e0e0e0;
+		border-right: none;
+		padding: 10px;
+	} 
+	.position div {
+		border-right: 1px solid #e0e0e0;
+	}
+
+	.category {
+		width: 20%;
+	}
+	.rating {
+		width: 20%;
+	}
+	.typeOfFood {
+		width: 15%;
+	}
+	.position {
+		width: 20%;
+	}
+	.deleteCompilation {
+		display: flex;
+		align-self: flex-end;
+		justify-content: flex-end;
+		color: red;
+		margin-bottom: 10px;
+		width: 25%;
+	}
+	.deleteCompilation img{
+		margin-top: 15px;
+		width: 20px;
+		height: 20px;
+	}
+	.deleteCompilation:hover {
+		cursor: pointer;
+		font-weight: 600;
+	}
+	.addCompilation{
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-right: 40px;
+		color: #2d9cdb;
+	}
+	.addCompilation:hover{
+		cursor: pointer;
+		font-weight: 600;
+	}
+	.footer {
+		padding-bottom: 20px;
+		padding-top: 20px;
+		margin-top: 50px; 
+		margin-bottom: 30px; 
+		width: 100vw;
+		display: flex;
+		justify-content: space-around;
+		background: white;
+		font-size: 13px;
+		color: #858585;
+	}
+	.footer a {
+		text-decoration: none;
+		color: #858585;
+		display: flex;
+	}
+	.footer a:hover {
+		text-decoration: underline dotted;
+	}
+	.social-networks a:hover {
+		color: #ff8e41;
+		text-decoration: none;
+	}
+	.footer h3{
+		color: black;
+	}
+	@media(min-width: 768px) and (max-width: 1024px){
+
+		html {
+			font-family: 'Open Sans', sans-serif;
+			font-size: 13px;	
+		}
+		.nav {
+			width: 80%;
+		}
+		.interests {
+			width: 720px;
+		}
+		.tabs .tab-content {
+			width: 700px;
+			left: 10px;
+		}
+		.rating {
+			width: 18%;
+		}
+		.position {
+			width: 23%;
+		}
+		.addCompilation {
+			height: 35px;
+		}
+		.deleteCompilation {
+			height: 40px;
+			width: 24%;
+		}
+		.filters2 p{
+			margin-left: 5px;
+		}
+		.tabs li > label {
+			padding: 0;
+		}
+		.footer {
+			padding-right: 20px;
+			width: 95vw;
+		}
+	}
+
+	@media(min-width: 320px) and (max-width:767px){
+		.nav {
+			width: 100%;
+		}
+		.interests {
+			width: 320px;
+		}
+		.tabs:after {
+			height: 1000px;
+		}	
+		.tabs .tab-content {
+			width: 300px;
+			left: 5px;
+			top:165px;
+		}
+		.seeResults {
+			margin-top:10px;
+		}
+		.tabs {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.tabs li {
+			width: 200px;
+		}
+		.countries {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.regions {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.filters, .filters2 {
+			display: flex;
+			flex-wrap: wrap;
+		}
+		.date, .amountOfDays, .amountOfGuests, .tourCost {
+			width: 50%;
+		}
+		.amountOfDays div,  .rating div {
+			border-right: 1px solid #e0e0e0;
+		}
+		.category, .rating, .typeOfFood, .position {
+			width: 50%;
+		}
+		.typeOfFood div {
+		}
+		.deleteCompilation {
+			margin-top: 10px;
+			margin-left: 10px;
+			width: 100px;
+		}
+		.footer {
+			display: flex;
+			flex-direction: column;
+			align-content: space-between;
+		}
+		.footer div {
+			margin-left: 10px;
+			margin-top: 15px;
+		}
+	}
+	/*селекты*/
+	.selectDays, .selectCost, .selectTypeFood, .selectPosition, .selectGuests, .selectRating {
+		border: none;
+		text-decoration: none;
+		font-size: 15px;
+		-moz-appearance: none;
+		-webkit-appearance: none;
+		appearance: none;
+		width: 100%;	
+	}
